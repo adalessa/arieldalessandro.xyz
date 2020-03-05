@@ -2,6 +2,7 @@ baseurl = "/"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
+DefaultContentLanguage = "es"
 
 [permalinks]
   posts = "/posts/:year/:month/:title/"
@@ -24,7 +25,6 @@ theme = "hello-friend-ng"
   homeSubtitle = "Software Engineer"
   # Directory name of your blog content (default is `content/posts`)
   # contentTypeName = "posts"
-  DefaultLanguageContent= "es"
   # Default theme "light" or "dark"
   defaultTheme = "dark"
 
