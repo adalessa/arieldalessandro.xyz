@@ -1,8 +1,11 @@
 baseurl = "/"
-languageCode = "en-us"
+
+defaultContentLanguage = "es"
 theme = "hello-friend-ng"
 
-DefaultContentLanguage = "es"
+[Author]
+  name = "Ariel D'Alessandro"
+
 
 [permalinks]
   posts = "/posts/:year/:month/:title/"
@@ -17,8 +20,8 @@ DefaultContentLanguage = "es"
   disableReadOtherPosts = false
 
   # Metadata mostly used in document's head
-  description = "My new homepage or blog"
-  keywords = "homepage, blog"
+  description = "Peronal Technology blog"
+  keywords = "homepage, blog, programming"
   images = [""]
 
 
@@ -28,21 +31,21 @@ DefaultContentLanguage = "es"
   # Default theme "light" or "dark"
   defaultTheme = "dark"
 
-[languages]
-  [languages.en]
-    title = "Ariel D'Alessandro"
-    subtitle = "My Personal Blog"
-    keywords = ""
-    copyright = ""
-    readOtherPosts = "Read other posts"
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/arielsempai"
+  [[params.social]]
+    name = "email"
+    url = "mailto:dalessandro.ariel@gmail.com"
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/adalessa"
 
-    [languages.en.params.logo]
-      logoText = "$ cd /home/"
-      logoHomeLink = "/"
+[languages]
   [languages.es]
     title = "Ariel D'Alessandro"
     subtitle = "Mi blog personal"
-    keywords = ""
+    keywords = "programacion php code"
     copyright = ""
     readOtherPosts = "Leer otros posts"
 
@@ -56,6 +59,6 @@ DefaultContentLanguage = "es"
 
   # And you can even create generic menu
   [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
+    identifier = "posts"
+    name       = "Posts"
     url        = "/posts"
